@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 关键：解决 Gitee 图片/资源无法加载的问题 [citation:9] -->
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哔乐助播 - 安装包下载</title>
+    <style>
+        /* 你之前的样式保持不变 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .card-header {
+            background: #f8f9fa;
+            padding: 20px 24px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .card-header h2 {
+            color: #333;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .version-badge {
+            background: #28a745;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: normal;
+        }
+        
+        .file-size {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .card-body {
+            padding: 24px;
+        }
+        
+        .info-row {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .info-label {
+            width: 100px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .info-value {
+            flex: 1;
+            color: #333;
+            word-break: break-all;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+        }
+        
+        .md5-copy {
+            cursor: pointer;
+            color: #667eea;
+            margin-left: 10px;
+            font-size: 0.8rem;
+        }
+        
+        .md5-copy:hover {
+            text-decoration: underline;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .verify-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .verify-title {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .md5-input-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .md5-input {
+            flex: 1;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+        }
+        
+        .verify-btn {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .verify-btn:hover {
+            background: #5a6268;
+        }
+        
+        .verify-result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            display: none;
+        }
+        
+        .verify-result.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .verify-result.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-top: 40px;
+            font-size: 0.85rem;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+        }
+        
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .info-row {
+                flex-direction: column;
+            }
+            
+            .info-label {
+                width: auto;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎬 哔乐助播</h1>
+            <p>下载最新安装包 · MD5 校验保证文件完整性</p>
+        </div>
+        
+        <div id="app">
+            <div class="loading">加载中...</div>
+        </div>
+        
+        <div class="footer">
+            <p>© 哔乐传媒 | 请确保下载的文件 MD5 值与页面显示一致</p>
+        </div>
+    </div>
+
+    <script>
+        // 安装包列表配置 - MD5 只需要填前8位（短MD5）
+        const packages = [
+            {
+                version: "1.0.0",
+                fileName: "BileBile-1.0.0-win-x64.exe",
+                fileSize: "0 MB",  // 填写实际大小
+                md5: "5d41402a",   // 短MD5，填前8位就行
+                releaseDate: "2026-04-18",
+                changelog: "首次发布版本",
+                downloadUrl: "https://7072-prod-0gl5r3sa80967e47-1364137829.tcb.qcloud.la/bilebile/setup/BileBile-1.0.0-win-x64.exe"
+            }
+            // 有新版本时在这里添加，注意版本号从高到低排列
+        ];
+        
+        // 复制到剪贴板
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = element.textContent;
+                element.textContent = '✓ 已复制';
+                setTimeout(() => {
+                    element.textContent = originalText;
+                }, 1500);
+            });
+        }
+        
+        // 计算本地文件MD5
+        async function calculateMD5(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = async function(e) {
+                    try {
+                        const buffer = e.target.result;
+                        const hashBuffer = await crypto.subtle.digest('MD5', buffer);
+                        const hashArray = Array.from(new Uint8Array(hashBuffer));
+                        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+                        resolve(hashHex);
+                    } catch (err) {
+                        reject(err);
+                    }
+                };
+                reader.onerror = reject;
+                reader.readAsArrayBuffer(file);
+            });
+        }
+        
+        // 验证本地文件MD5
+        async function verifyLocalFile(expectedMd5, fileInput, resultElement) {
+            const file = fileInput.files[0];
+            if (!file) {
+                resultElement.textContent = '请先选择文件';
+                resultElement.className = 'verify-result error';
+                resultElement.style.display = 'block';
+                return;
+            }
+            
+            resultElement.textContent = '计算中...';
+            resultElement.className = 'verify-result';
+            resultElement.style.display = 'block';
+            
+            try {
+                const calculatedMd5 = await calculateMD5(file);
+                // 比较时只比较前8位（短MD5）
+                const shortCalculated = calculatedMd5.substring(0, 8);
+                if (shortCalculated.toLowerCase() === expectedMd5.toLowerCase()) {
+                    resultElement.textContent = `✓ MD5 校验通过！文件完整。`;
+                    resultElement.className = 'verify-result success';
+                } else {
+                    resultElement.textContent = `✗ MD5 校验失败！期望: ${expectedMd5}，实际: ${shortCalculated}`;
+                    resultElement.className = 'verify-result error';
+                }
+            } catch (err) {
+                resultElement.textContent = `计算 MD5 失败: ${err.message}`;
+                resultElement.className = 'verify-result error';
+            }
+        }
+        
+        // 渲染页面
+        function render() {
+            const app = document.getElementById('app');
+            
+            if (!packages || packages.length === 0) {
+                app.innerHTML = '<div class="error-message">暂无可用安装包</div>';
+                return;
+            }
+            
+            // 按版本号降序排序
+            const sortedPackages = [...packages].sort((a, b) => {
+                const va = a.version.split('.').map(Number);
+                const vb = b.version.split('.').map(Number);
+                for (let i = 0; i < Math.max(va.length, vb.length); i++) {
+                    const na = va[i] || 0;
+                    const nb = vb[i] || 0;
+                    if (na !== nb) return nb - na;
+                }
+                return 0;
+            });
+            
+            let html = '';
+            
+            sortedPackages.forEach((pkg, index) => {
+                const isLatest = index === 0;
+                
+                html += `
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>
+                                📦 哔乐助播 v${pkg.version}
+                                ${isLatest ? '<span class="version-badge">最新版</span>' : ''}
+                            </h2>
+                            <span class="file-size">${pkg.fileSize}</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row">
+                                <div class="info-label">文件名</div>
+                                <div class="info-value">${pkg.fileName}</div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">发布日期</div>
+                                <div class="info-value">${pkg.releaseDate}</div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">MD5</div>
+                                <div class="info-value">
+                                    ${pkg.md5 || '未提供'}
+                                    ${pkg.md5 ? `<span class="md5-copy" onclick="copyToClipboard('${pkg.md5}', this)">📋 复制</span>` : ''}
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">更新内容</div>
+                                <div class="info-value">${pkg.changelog || '无'}</div>
+                            </div>
+                            
+                            <a href="${pkg.downloadUrl}" class="download-btn" download>⬇️ 下载安装包</a>
+                            
+                            <div class="verify-section">
+                                <div class="verify-title">🔒 文件完整性校验</div>
+                                <div class="md5-input-group">
+                                    <input type="file" id="fileInput_${index}" class="md5-input" accept=".exe">
+                                    <button class="verify-btn" onclick="verifyLocalFile('${pkg.md5}', document.getElementById('fileInput_${index}'), document.getElementById('result_${index}'))">校验 MD5</button>
+                                </div>
+                                <div id="result_${index}" class="verify-result"></div>
+                                <small style="color: #6c757d; font-size: 0.75rem;">下载后请校验 MD5 值，确保文件完整无损</small>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            app.innerHTML = html;
+        }
+        
+        render();
+    </script>
+</body>
+</html>
