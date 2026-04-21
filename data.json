@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "title": "哔乐助播",
+    "highlight": "让直播助播效率翻倍",
+    "description": "专业级直播辅助工具 — 智能场控 · 实时弹幕管理 · 商品提词器 · 多平台数据看板。为团队协作而生，开播更从容。",
+    "primaryBtn": "立即下载新版",
+    "primaryLink": "#downloads",
+    "secondaryBtn": "了解功能",
+    "secondaryLink": "#features"
+  },
+  "features": {
+    "title": "✨ 核心能力",
+    "list": [
+      { "icon": "🎮", "title": "智能场控", "desc": "一键上下商品，自动回复，定时任务，解放双手专注内容。" },
+      { "icon": "💬", "title": "弹幕互动增强", "desc": "关键词高亮，弹幕礼物统计，自动感谢，提升直播间氛围。" },
+      { "icon": "📊", "title": "实时数据看板", "desc": "在线人数、成交趋势、粉丝变化，多维度复盘直播。" },
+      { "icon": "🔧", "title": "提词器与脚本", "desc": "悬浮提词，多组脚本快速切换，告别忘词尴尬。" }
+    ]
+  },
+  "usage": {
+    "title": "📖 使用说明",
+    "steps": [
+      { "num": 1, "title": "下载安装包", "desc": "从下方列表选择对应版本，点击「下载」获取安装程序。" },
+      { "num": 2, "title": "运行安装", "desc": "双击 .exe 文件，按照指引完成安装。建议关闭杀毒软件避免误报。" },
+      { "num": 3, "title": "登录/激活", "desc": "使用哔乐账号登录（注册免费），团队协作邀请成员。" },
+      { "num": 4, "title": "开始直播", "desc": "连接直播平台，开启助手功能，享受高效直播体验。" }
+    ],
+    "faq": [
+      { "q": "❓ 杀毒软件报毒怎么办？", "a": "本软件通过数字签名认证，如遇误报请添加信任区或临时关闭防护，安心使用。" },
+      { "q": "❓ 如何更新到最新版？", "a": "软件内置自动更新提醒，或到官网下载页获取最新安装包覆盖安装。" },
+      { "q": "❓ MD5 校验是什么？", "a": "用于验证文件完整性，下载后使用页面工具比对，防止文件损坏或被篡改。" }
+    ]
+  },
+  "downloads": {
+    "latestFirst": true,
+    "packages": [
+      {
+        "version": "2.1.0",
+        "fileName": "BileLive_2.1.0_win_x64.exe",
+        "fileSize": "98.5 MB",
+        "md5": "a1b2c3d4",
+        "releaseDate": "2026-04-20",
+        "changelog": "新增数据大屏模式，修复弹窗卡顿，优化提词器性能。",
+        "downloadUrl": "https://你的实际下载链接/BileLive_2.1.0_win_x64.exe",
+        "isLatest": true
+      },
+      {
+        "version": "2.0.5",
+        "fileName": "BileLive_2.0.5_win_x64.exe",
+        "fileSize": "94.2 MB",
+        "md5": "e5f6g7h8",
+        "releaseDate": "2026-03-10",
+        "changelog": "增强多平台兼容，修复弹幕过滤bug。",
+        "downloadUrl": "https://你的实际下载链接/BileLive_2.0.5_win_x64.exe",
+        "isLatest": false
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 哔乐传媒科技 | 专注直播生态",
+    "icp": "沪ICP备 12345678号"
+  }
+}
