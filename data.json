@@ -37,12 +37,12 @@
     "packages": [
       {
         "version": "1.0.2",
-        "fileName": "BileBile-1.0.1-win-x64.exe",
-        "fileSize": "30.7 MB",
-        "md5": "6C72630E",
-        "releaseDate": "2026-04-21",
+        "fileName": "BileBile-1.0.2-win-x64.exe",
+        "fileSize": "30.0 MB",
+        "md5": "BE4EEB47",
+        "releaseDate": "2026-04-22",
         "changelog": "首次发布。",
-        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.1-win-x64.exe?sign=abb7be658882ec30e7f048dfbc00fdad&t=1776757998",
+        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.2-win-x64.exe?sign=ecc4d17bcbeded9cfdeb8c3ece1576f3&t=1776844139",
         "isLatest": true
       }
     ]
