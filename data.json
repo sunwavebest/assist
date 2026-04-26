@@ -36,13 +36,13 @@
     "latestFirst": true,
     "packages": [
       {
-        "version": "1.0.3",
-        "fileName": "BileBile-1.0.3-win-x64.exe",
+        "version": "1.0.4",
+        "fileName": "BileBile-1.0.4-win-x64.exe",
         "fileSize": "30.0 MB",
-        "md5": "4147158A",
-        "releaseDate": "2026-04-23",
+        "md5": "9802A99B",
+        "releaseDate": "2026-04-26",
         "changelog": "增加用户推荐逻辑。",
-        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.3-win-x64.exe?sign=cac2eefb6dc7eb2246d0188a4e85b8c2&t=1776877539",
+        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.4-win-x64.exe?sign=982f7445cffda380201ce4e57c0a7f24&t=1777187516",
         "isLatest": true
       }
     ]
