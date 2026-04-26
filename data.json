@@ -39,10 +39,10 @@
         "version": "1.0.4",
         "fileName": "BileBile-1.0.4-win-x64.exe",
         "fileSize": "30.0 MB",
-        "md5": "9802A99B",
+        "md5": "BFD5C5D3",
         "releaseDate": "2026-04-26",
-        "changelog": "增加用户推荐逻辑。",
-        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.4-win-x64.exe?sign=982f7445cffda380201ce4e57c0a7f24&t=1777187516",
+        "changelog": "增加迷你窗口。",
+        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.4-win-x64.exe?sign=9a4ce7dd60caf274ad9e1f95a9f4ec44&t=177718839",
         "isLatest": true
       }
     ]
