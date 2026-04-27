@@ -14,7 +14,8 @@
       { "icon": "🎮", "title": "礼物自动上屏", "desc": "礼物条自动上屏，投喂后立即可见，牌面立即给足，情绪价值拉满。" },
       { "icon": "💬", "title": "AI智能弹幕助手", "desc": "AI自动欢迎、感谢大哥，智能提醒，不再冷场。" },
       { "icon": "📊", "title": "智能录屏", "desc": "礼物来了自动录屏，不再担心漏掉任何精彩瞬间。" },
-      { "icon": "🔧", "title": "特效仓库", "desc": "没有个性笼子，仓库里选，总有一款适合你。" }
+      { "icon": "🔧", "title": "特效仓库", "desc": "没有个性笼子，仓库里选，总有一款适合你。" },
+      { "icon": "🏷️", "title": "超级横幅", "desc": "礼物、守护、关注、粉团自动累计，多级目标自动显示。" }
     ]
   },
   "usage": {
@@ -39,10 +40,10 @@
         "version": "1.0.5",
         "fileName": "BileBile-1.0.5-win-x64.exe",
         "fileSize": "30.0 MB",
-        "md5": "7ED15628",
+        "md5": "31A779E5",
         "releaseDate": "2026-04-27",
         "changelog": "增加迷你窗口。",
-        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.5-win-x64.exe?sign=e1c109a79cfd49e07aed1bcaa0796110&t=1777226371",
+        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.5-win-x64.exe?sign=0ee3e7ac422754f7e86c0f3b0029eab0&t=1777305817",
         "isLatest": true
       }
     ]
