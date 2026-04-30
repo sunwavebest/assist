@@ -388,7 +388,7 @@
             <div class="hero" style="text-align:center;padding:50px 0 20px"><h1 style="font-size:3rem;">${escapeHtml(appData.hero.title)} <span style="background:linear-gradient(135deg,#ff4785,#ff9f4a);background-clip:text;-webkit-background-clip:text;color:transparent;">${escapeHtml(appData.hero.highlight)}</span></h1>
             <div class="sub" style="font-size:1.2rem;color:#4a4a6a;">${escapeHtml(appData.hero.description)}</div>
             <div class="hero-buttons" style="margin-top:30px;"><a href="#downloads" class="btn-primary">⬇️ ${escapeHtml(appData.hero.primaryBtn)}</a><a href="#features" class="btn-outline">✨ ${escapeHtml(appData.hero.secondaryBtn)}</a></div>
-            <div class="hero-highlights"><div class="highlight-card">🎁 礼物自动上屏</div><div class="highlight-card">🤖 AI弹幕·免费</div><div class="highlight-card">📹 智能录屏</div></div></div>`;
+            <div class="hero-highlights"><div class="highlight-card">🎁 礼物自动上屏</div><div class="highlight-card">🤖 AI弹幕·Token免费</div><div class="highlight-card">📹 智能录屏</div></div></div>`;
         
         document.getElementById('promotionSection').innerHTML = `<div class="promotion-card"><h2>${escapeHtml(appData.promotion.title)}</h2><div class="promotion-rules">${escapeHtml(appData.promotion.ruleLine1)}<br>${escapeHtml(appData.promotion.ruleLine2)}</div><button class="btn-primary" id="copyPromoBtn">📋 ${escapeHtml(appData.promotion.buttonText)}</button></div>`;
         document.getElementById('copyPromoBtn')?.addEventListener('click',()=>{navigator.clipboard.writeText(appData.promotion.link); alert('推广链接已复制');});
