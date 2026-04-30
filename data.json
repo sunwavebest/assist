@@ -2,7 +2,7 @@
   "hero": {
     "title": "哔乐神助播",
     "highlight": "让直播助播效率翻倍",
-    "description": "专业级直播辅助工具 — 礼物自动上屏 · AI智能弹幕助手 · 智能录屏 · 特效仓库。你集中精力做直播，其他的让我来！",
+    "description": "专业级直播辅助工具 — 礼物自动上屏 · AI弹幕助手 · 智能录屏 · 智能横幅。你集中精力做直播，其他的让我来！",
     "primaryBtn": "立即下载新版",
     "primaryLink": "#downloads",
     "secondaryBtn": "了解功能",
@@ -20,27 +20,27 @@
   "features": {
     "title": "✨ 核心能力 · 别人做不到的我们天生就会",
     "list": [
-      { "icon": "🎮", "title": "礼物自动上屏", "desc": "礼物条自动上屏，投喂后立即可见，牌面立即给足，情绪价值拉满。" },
-      { "icon": "💬", "title": "AI智能弹幕助手", "desc": "AI自动欢迎、感谢大哥，智能提醒，不再冷场。完全免费！" },
+      { "icon": "🎮", "title": "礼物自动上屏", "desc": "礼物条自动上屏，投喂后立等可见，牌面给足，情绪价值拉满。" },
+      { "icon": "💬", "title": "AI智能弹幕助手", "desc": "AI自动欢迎、感谢大哥，智能提醒，不再冷场。免token费！" },
       { "icon": "📊", "title": "智能录屏", "desc": "礼物来了自动录屏，不再担心漏掉任何精彩瞬间。" },
-      { "icon": "✨", "title": "特效仓库", "desc": "没有个性笼子，仓库里选，总有一款适合你。免费持续更新！" },
-      { "icon": "🏷️", "title": "智能横幅", "desc": "礼物、守护、关注、粉团自动累计，多级目标自动显示。" },
-      { "icon": "⏰", "title": "定时任务", "desc": "航海日、城堡日自动提醒，跑马灯+弹窗，再也不会忘。" }
+      { "icon": "🏷️", "title": "智能横幅", "desc": "礼物、守护、关注、粉团自动累计，多级目标自动升级，逐步达成目标。" },
+      { "icon": "⏰", "title": "定时任务", "desc": "航海日、城堡日、自定义消息自动提醒，桌面跑马灯+弹窗，再也不会忘。" },
+      { "icon": "✨", "title": "特效仓库", "desc": "没有个性笼子，仓库里选，总有一款适合你。免费持续更新！" }
     ],
     "details": [
       {
         "id": "gift_auto",
         "title": "🎁 礼物自动上屏 · 大哥情绪值直接拉满",
-        "shortDesc": "市面上唯一真正做到「礼物来了自动上屏」的助手",
+        "shortDesc": "市面上真正做到「礼物来了自动上屏」的助手",
         "longDesc": "市面上的直播助手？礼物来了——你得手动去网站翻记录、截图、抠图、再贴到直播伴侣…等你折腾完，大哥心都凉了。<br><br><strong>我们的方式：</strong><br>🎁 礼物一来，<strong>自动生成动态图像</strong>，按你设定的上屏条件，<strong>自动追加到屏幕</strong>！<br>⚡ 解放双手，<strong>实时上屏</strong>，大哥的排面一秒都不耽误，情绪价值当场给足，刷礼物的热情翻倍。<br>🎨 提供<strong>两种滚动模式</strong>，<strong>滚动速度、礼物条间距</strong>自由调节。",
         "imageUrl": "",
         "videoUrl": ""
       },
       {
         "id": "ai_danmu",
-        "title": "🤖 AI弹幕助手 · 免费又聪明",
+        "title": "🤖 AI弹幕助手 · token免费又聪明",
         "shortDesc": "自动欢迎、感谢只是基础，AI让弹幕有灵性",
-        "longDesc": "自动欢迎、感谢、提醒？那只是基础。<br>🧠 我们给弹幕装上<strong>AI大脑</strong>——回复不再千篇一律，弹幕有了“灵性”。<br>💬 直播间氛围更活跃，<strong>话再少的观众也忍不住想发两句</strong>。<br><br>❗ <strong style=\"color:#ff4785;\">重点：AI功能完全免费！</strong> 不用额外花一分钱。",
+        "longDesc": "自动欢迎、感谢、提醒？那只是基础。<br>🧠 我们给弹幕装上<strong>AI大脑</strong>——回复不再千篇一律，弹幕有了“灵性”。<br>💬 直播间氛围更活跃，<strong>话再少的观众也忍不住想发两句</strong>。<br><br>❗ <strong style=\"color:#ff4785;\">重点：AI的token免费！</strong> 不用额外花一分钱。",
         "imageUrl": "",
         "videoUrl": ""
       },
@@ -48,15 +48,15 @@
         "id": "auto_record",
         "title": "📹 自动录屏 · 再也不会错过高燃瞬间",
         "shortDesc": "别的助手只能手动截图，我们自动录屏",
-        "longDesc": "别的助手？主播只能<strong>手动截图</strong>，一不留神精彩就溜走了。<br><br>📹 礼物来了——<strong>自动开始录屏</strong>，保存为 <strong>MP4 文件</strong>，每一个高光时刻都不漏掉！<br>💎 下播后不用发愁投稿没素材，轻松完成投稿任务，还能剪辑成感谢视频发给大哥，<strong>感情迅速升温</strong>。",
+        "longDesc": "别的助手？主播只能<strong>手动截图</strong>，一不留神精彩就溜走了。<br><br>📹 礼物来了——<strong>自动开始录屏</strong>，保存为 <strong>MP4 文件</strong>，每一个高光时刻都不漏掉！<br>💎 下播后不用发愁投稿没素材，轻松完成投稿任务，感谢视频发给大哥，<strong>感情迅速升温</strong>。",
         "imageUrl": "",
         "videoUrl": ""
       },
       {
         "id": "smart_banner",
-        "title": "🏷️ 智能横幅 · 再也不用怕记错数",
-        "shortDesc": "礼物/守护/关注自动计数，多级目标自动升级",
-        "longDesc": "“要是横幅能跟礼物绑定、自动计数就好了”——你的愿望，我们实现了。<br><br>✅ <strong>文字随意编辑</strong>，样式自定义，还能存为<strong>模板</strong>。<br>✅ 可绑定<strong>礼物、守护（大航海）、关注、粉团</strong>，<strong>自动计数、自动更新</strong>。<br>✅ 支持<strong>多级目标</strong>（50/80/120…），达到当前目标值<strong>自动升级到下一级</strong>。",
+        "title": "🏷️ 智能横幅 · 再也不怕记错数",
+        "shortDesc": "礼物/守护/关注/粉团自动计数，多级目标自动升级",
+        "longDesc": "“要是横幅能跟礼物绑定、能自动计数就好了”——你的愿望，我们实现了。<br><br>✅ <strong>文字随意编辑</strong>，样式自定义，还能存为<strong>模板</strong>。<br>✅ 可绑定<strong>礼物、守护（大航海）、关注、粉团</strong>，<strong>自动计数、自动更新</strong>。<br>✅ 支持<strong>多级目标</strong>（50/80/120…），达到当前目标值<strong>自动升级到下一级</strong>。",
         "imageUrl": "",
         "videoUrl": ""
       },
@@ -72,7 +72,7 @@
         "id": "effect_lib",
         "title": "✨ 特效仓库 · 别人有的你免费拥有",
         "shortDesc": "可爱、炫酷特效任你选，持续更新",
-        "longDesc": "“别人都有特效笼子，我也想要……”<br><br>🎁 别急，我们直接送你——<strong>可爱、炫酷各种风格任你选</strong>，完全免费！<br>🔄 特效持续更新，永远有新惊喜。<br><br>不用额外花钱，就能拥有主播同款特效。",
+        "longDesc": "“别人都有特效笼子，我也想要……”<br><br>🎁 别急，我们直接送你——<strong>可爱、炫酷各种风格任你选</strong>，完全免费！<br>🔄 特效持续更新，永远有新惊喜。<br><br>不用额外花钱，就能拥有同款特效。",
         "imageUrl": "",
         "videoUrl": ""
       }
@@ -120,7 +120,6 @@
     ]
   },
   "footer": {
-    "copyright": "© 2026 哔乐传媒科技 | 专注直播生态",
-    "icp": "沪ICP备2026xxxx号"
+    "copyright": "© 2026 哔乐科技 | 专注直播生态"    
   }
 }
