@@ -13,7 +13,7 @@
     "subtitle": "你推荐，我送会员",
     "ruleLine1": "🔥 推5个会员 → 送2个月会员",
     "ruleLine2": "💎 推10个会员 → 送5个月会员",
-    "buttonText": "📋 复制推广链接",
+    "buttonText": "📋 安装软件并注册账号，双击头像获取推广码",
     "link": "https://bileassist.cn/invite/yourcode",
     "bgGradient": "linear-gradient(135deg, #ffdde1, #ee9ca7)"
   },
@@ -54,7 +54,7 @@
       },
       {
         "id": "smart_banner",
-        "title": "🏷️ 智能横幅 · 再也不怕记错礼物数量",
+        "title": "🏷️ 智能横幅 · 再也不怕记错礼物数量 · 自动计数",
         "shortDesc": "礼物/守护/关注/粉团自动计数，多级目标自动升级",
         "longDesc": "“要是横幅能跟礼物绑定、能自动计数就好了”——你的愿望，我们实现了。<br><br>✅ <strong>文字随意编辑</strong>，样式自定义，还能存为<strong>模板</strong>。<br>✅ 可绑定<strong>礼物、守护（大航海）、关注、粉团</strong>，<strong>自动计数、自动更新</strong>。<br>✅ 支持<strong>多级目标</strong>（50/80/120…），达到当前目标值<strong>自动升级到下一级</strong>。",
         "imageUrl": "",
@@ -62,7 +62,7 @@
       },
       {
         "id": "timed_task",
-        "title": "⏰ 定时任务 · 重要事件绝不忘",
+        "title": "⏰ 定时任务 · 重要事件绝不忘 · 弹幕提醒/窗口提醒任你选",
         "shortDesc": "航海日、城堡日自动提醒，跑马灯+弹窗",
         "longDesc": "“上周忘了提醒航海日，这周又紧张忘了……”——别怕，它来了。<br><br>⏰ 重要事件<strong>定时触发、按周期触发</strong>：<br>• 周三航海日 → 自动发弹幕提醒“该上船啦”<br>• 周五城堡日 → 持续提醒“公主想住城堡”<br><br>💡 不想弹幕提醒？<strong>窗口提醒 + 跑马灯模式</strong>循环滚动，想忘都忘不了。",
         "imageUrl": "",
@@ -111,10 +111,10 @@
         "version": "1.0.6",
         "fileName": "BileBile-1.0.6-win-x64.exe",
         "fileSize": "30.0 MB",
-        "md5": "C4467496",
+        "md5": "36D072F4",
         "releaseDate": "2026-05-01",
         "changelog": "增加迷你窗口，优化礼物上屏速度。",
-        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.6-win-x64.exe?sign=6e9725351cd987e04b4c36ba8801bc65&t=1777620182",
+        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.6-win-x64.exe?sign=b4d0ddad6316e2202735733fd117bdf6&t=1777623986",
         "isLatest": true
       }
     ]
