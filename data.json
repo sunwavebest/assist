@@ -80,15 +80,11 @@
     "title": "🎬 使用效果展示",
     "subtitle": "点击卡片观看视频",
     "images": [
-        "https://gitee.com/bilebile/assist/raw/master/video1.png",
-        "https://你的宣传视频封面图.jpg",
-        "https://你的使用教程封面图.jpg"
-    ],
-    "videoUrls": [
-        "https://www.bilibili.com/video/BV1WB9iBrEpC",
-        "https://www.bilibili.com/video/你的宣传视频BV号",
-        "https://www.bilibili.com/video/你的教程视频BV号"
-    ]
+    "https://gitee.com/bilebile/assist/raw/master/video1.png"
+],
+"videoUrls": [
+    "https://www.bilibili.com/video/BV1WB9iBrEpC"
+]
 },
   "usage": {
     "title": "📖 使用说明",
