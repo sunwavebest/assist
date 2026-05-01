@@ -108,13 +108,13 @@
     "latestFirst": true,
     "packages": [
       {
-        "version": "1.0.5",
-        "fileName": "BileBile-1.0.5-win-x64.exe",
+        "version": "1.0.6",
+        "fileName": "BileBile-1.0.6-win-x64.exe",
         "fileSize": "30.0 MB",
-        "md5": "31A779E5",
-        "releaseDate": "2026-04-27",
+        "md5": "C4467496",
+        "releaseDate": "2026-05-01",
         "changelog": "增加迷你窗口，优化礼物上屏速度。",
-        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.5-win-x64.exe?sign=0ee3e7ac422754f7e86c0f3b0029eab0&t=1777305817",
+        "downloadUrl": "https://bileassist.cn/bilebile/setup/BileBile-1.0.6-win-x64.exe?sign=6e9725351cd987e04b4c36ba8801bc65&t=1777620182",
         "isLatest": true
       }
     ]
