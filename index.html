@@ -407,7 +407,15 @@
         document.querySelectorAll('.detail-header').forEach(h=>{ h.addEventListener('click',()=>{ h.nextElementSibling.classList.toggle('show'); h.querySelector('.arrow').style.transform = h.nextElementSibling.classList.contains('show')?'rotate(180deg)':'rotate(0deg)'; }); });
         
         let mediaHtml = `<div class="card"><div class="section-title">${escapeHtml(appData.mediaShowcase.title)}</div><div style="text-align:center;">${escapeHtml(appData.mediaShowcase.subtitle)}</div><div class="media-grid">`;
-        appData.mediaShowcase.images.forEach(img=>{ mediaHtml+=`<a href="${img}" target="_blank" rel="noopener noreferrer" class="media-image" style="background-image:url('${img}');background-size:cover;background-position:center;color:white;text-shadow:0 0 5px black;display:flex;align-items:center;justify-content:center;text-decoration:none;">▶️ 点击播放</a>`; });
+        const videoUrls = appData.mediaShowcase.videoUrls || [];
+appData.mediaShowcase.images.forEach((img, index) => { 
+    const videoUrl = videoUrls[index] || img;
+    const titles = ['🎬 效果演示', '📢 宣传视频', '📖 使用教程'];
+    mediaHtml += `<a href="${videoUrl}" target="_blank" rel="noopener noreferrer" class="media-image" style="background-image:url('${img}');background-size:cover;background-position:center;color:white;text-shadow:0 0 5px black;display:flex;align-items:center;justify-content:center;text-decoration:none;flex-direction:column;aspect-ratio:9/16;border-radius:24px;">
+        <div style="font-size:48px;margin-bottom:8px;">▶️</div>
+        <div style="font-size:14px;background:rgba(0,0,0,0.6);padding:4px 12px;border-radius:20px;margin-bottom:30px;">${titles[index] || '点击观看'}</div>
+    </a>`;
+});
         mediaHtml+=`</div><div class="video-placeholder">🎬 宣传视频即将上线 · 敬请期待</div></div>`;
         document.getElementById('mediaShowcase').innerHTML = mediaHtml;
         
