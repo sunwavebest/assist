@@ -77,16 +77,19 @@
     ]
   },
   "mediaShowcase": {
-    "title": "🎬 使用效果演示",
-    
+    "title": "🎬 使用效果展示",
+    "subtitle": "点击卡片观看视频",
     "images": [
-      "https://www.bilibili.com/video/BV1WB9iBrEpC?text=礼物上屏效果",
-      "https://via.placeholder.com/400x300?text=自动录屏",
-      "https://via.placeholder.com/400x300?text=智能横幅计数"
+        "https://你的效果演示视频封面图.jpg",
+        "https://你的宣传视频封面图.jpg",
+        "https://你的使用教程封面图.jpg"
     ],
-    "videoUrl": "",
-    "videoPoster": "https://via.placeholder.com/800x450?text=宣传视频+即将上线"
-  },
+    "videoUrls": [
+        "https://www.bilibili.com/video/BV1WB9iBrEpC",
+        "https://www.bilibili.com/video/你的宣传视频BV号",
+        "https://www.bilibili.com/video/你的教程视频BV号"
+    ]
+},
   "usage": {
     "title": "📖 使用说明",
     "steps": [
