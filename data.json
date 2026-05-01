@@ -54,7 +54,7 @@
       },
       {
         "id": "smart_banner",
-        "title": "🏷️ 智能横幅 · 再也不怕记错数",
+        "title": "🏷️ 智能横幅 · 再也不怕记错礼物数量",
         "shortDesc": "礼物/守护/关注/粉团自动计数，多级目标自动升级",
         "longDesc": "“要是横幅能跟礼物绑定、能自动计数就好了”——你的愿望，我们实现了。<br><br>✅ <strong>文字随意编辑</strong>，样式自定义，还能存为<strong>模板</strong>。<br>✅ 可绑定<strong>礼物、守护（大航海）、关注、粉团</strong>，<strong>自动计数、自动更新</strong>。<br>✅ 支持<strong>多级目标</strong>（50/80/120…），达到当前目标值<strong>自动升级到下一级</strong>。",
         "imageUrl": "",
