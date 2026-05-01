@@ -392,7 +392,7 @@
             <div class="hero-highlights"><div class="highlight-card">🎁 礼物自动上屏</div><div class="highlight-card">🤖 AI弹幕·Token免费</div><div class="highlight-card">📹 智能录屏</div></div></div>`;
         
         document.getElementById('promotionSection').innerHTML = `<div class="promotion-card"><h2>${escapeHtml(appData.promotion.title)}</h2><div class="promotion-rules">${escapeHtml(appData.promotion.ruleLine1)}<br>${escapeHtml(appData.promotion.ruleLine2)}</div><button class="btn-primary" id="copyPromoBtn">📋 ${escapeHtml(appData.promotion.buttonText)}</button></div>`;
-        document.getElementById('copyPromoBtn')?.addEventListener('click',()=>{navigator.clipboard.writeText(appData.promotion.link); alert('推广链接已复制');});
+        });
         
         let featuresHtml = `<div class="section-title">${escapeHtml(appData.features.title)}</div><div class="features-grid">`;
         appData.features.list.forEach(f=>{ featuresHtml+=`<div class="feature-item"><div class="feature-icon">${f.icon}</div><h3>${escapeHtml(f.title)}</h3><p>${escapeHtml(f.desc)}</p></div>`; });
